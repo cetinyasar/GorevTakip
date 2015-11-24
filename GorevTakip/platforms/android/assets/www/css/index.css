@@ -1,0 +1,61 @@
+﻿.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+    white-space: normal;
+}
+
+.gtAciklama {
+    clear: both;
+    color: rgb(34, 34, 34);
+    width: 100%;
+    perspective-origin: 206px 159px;
+    transform-origin: 206px 159px;
+    border: 1px none rgb(225, 46, 46);
+    font: normal 10px / normal 'Helvetica Neue', Helvetica, 'Droid Sans', DroidSansRegular, Arial, sans-serif;
+}
+
+    .gtAciklama h2 {
+        color: rgb(41, 69, 134);
+        cursor: auto;
+        display: block;
+        font-family: 'Helvetica Neue', Helvetica, 'Droid Sans', DroidSansRegular, Arial, sans-serif;
+        font-size: 14px;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+    }
+
+.tags {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.postTag {
+    border-color: rgb(192, 212, 219);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 14px;
+    color: rgb(86, 110, 118);
+    font-size: 10px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.postTagGonderim {
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+    .postTagGonderim a {
+        color: rgb(170, 170, 170);
+        text-decoration: none;
+    }
+
+.gtIcerik {
+    white-space: normal;
+    padding: 10px;
+}

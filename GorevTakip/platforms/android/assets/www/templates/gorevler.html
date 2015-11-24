@@ -1,0 +1,27 @@
+﻿<ion-view view-title="Görevler">
+    <ion-content>
+        <ion-list>
+            <div ng-repeat="pano in Context.Panolar">
+                <ion-item class="item-stable baslik" ng-click="toggleGroup(pano)" ng-class="{active:isGroupShown(pano)}">
+                    {{pano.Ad}}
+                </ion-item>
+                <ion-item class="item-accordion gtIcerik" ng-repeat="is in pano.Isler" ng-show="isGroupShown(pano)">
+
+                    <div class="gtAciklama" ng-click="isDetayAc(is)">
+                        <h2>
+                            {{is.Baslik}}
+                        </h2>
+                        <div class="tags" ng-repeat="aktif in is.AktifFaaliyetler">
+                            <a href="#" class="postTag">{{aktif.AcikAd}}</a>
+                        </div>
+
+                        <div class="postTagGonderim">
+                            <a href="#"> <span>{{is.OlusturmaTarihi|date:'dd/MM/yyyy'}}</span></a>
+                            <a href="#">{{is.OlusturanKullaniciAdi}}</a>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
